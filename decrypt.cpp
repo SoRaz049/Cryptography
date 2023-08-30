@@ -30,12 +30,18 @@ string decrpyt(string message, int key)
         else if(message_int>=65 && message_int<=90)
             cypher+=upperlower(message_int-key,'A');
     }
-
-    cout<<cypher;
     return cypher;
 }
 
 int main()
 {
-    decrpyt("Gcusmmciofsouccrtfwsbr",14);
+    string message;
+    int key;
+    cout<<"Enter the message to decrypt: ";
+    cin>>message;
+    cout<<"Enter the key: ";
+    cin>>key;
+    cout<<endl;
+    cout<<"The plain text for the message '"<<message<<"' is: "<<endl<<decrpyt(message,key);
+    cout<<endl;
 }
