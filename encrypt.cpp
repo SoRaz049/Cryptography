@@ -29,11 +29,18 @@ string encrpyt(string message, int key)
             cypher+=upperlower(message_int+key,'Z');
     }
 
-    cout<<cypher;
     return cypher;
 }
 
 int main()
 {
-    encrpyt("Nayan",14);
+    string message;
+    int key;
+    cout<<"Enter the message to encrypt: ";
+    cin>>message;
+    cout<<"Enter the key: ";
+    cin>>key;
+    cout<<endl;
+    cout<<"The cypher text for the message '"<<message<<"' is: "<<endl<<encrpyt(message,key);
+    cout<<endl;
 }
