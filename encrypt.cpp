@@ -37,7 +37,7 @@ int main()
     string message;
     int key;
     cout<<"Enter the message to encrypt: ";
-    cin>>message;
+    getline(cin,message);
     cout<<"Enter the key: ";
     cin>>key;
     cout<<endl;
