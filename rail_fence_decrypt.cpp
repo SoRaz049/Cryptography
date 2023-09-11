@@ -124,7 +124,8 @@ int main()
 
     plain_text = decrypt(cypher_text, key);
 
-    cout << "\nPlain Text: " << plain_text << endl;
+    cout<<endl << "\nPlain Text for the  '"<<cypher_text<<"' is: " << plain_text << endl;
+    cout<<endl;
     return 0;
 }
 
